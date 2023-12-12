@@ -1,0 +1,414 @@
+
+canvas { position: fixed; pointer-events: none; z-index: 1; }
+@media (max-width: 600px) { canvas { display: none; }}
+
+body
+{
+    background-color: #eeeef0;
+    background-image: url("paper.gif");
+    background-size: 1800px;
+    background-repeat: repeat;
+    background-position: center top;
+    background-attachment: scroll;
+}
+
+.hide { display: none; }
+
+.text
+{
+    font-size: 16px; position: absolute; margin-top: 1145px; display: none;
+    left: calc(50%); transform: translate(-50%,0%); visibility: hidden;
+}
+
+.n
+{
+    position: absolute; width: 275px; margin-top: 45px;
+    left: calc(50%); transform: translate(-50%,0%);
+}
+
+@media screen and (max-width: 600px) { .n { width: 200px; margin-top: 25px; }}
+
+.about
+{
+    position: absolute; width: 150px; top: 185px;
+    left: calc(50% - 240px); transform: translate(-50%,0%);
+}
+
+.aboutl { position: absolute; width: 150px; }
+.aboutc { position: absolute; width: 150px; opacity: 0; }
+.about:hover .aboutc { opacity: 1; }
+
+.snowcat
+{
+    position: absolute; width: 400px; top: 205px;
+    left: calc(50%); transform: translate(-50%,0%);
+}
+
+.snowcatl { position: absolute; width: 400px; z-index: 2; visibility: hidden; }
+.snowcatc { position: absolute; width: 400px; z-index: 1; visibility: hidden; }
+.snowcat:hover .snowcatc { z-index: 3; }
+
+.loops
+{
+    position: absolute; width: 200px; top: 185px;
+    left: calc(50% + 250px); transform: translate(-50%,0%);
+}
+
+.loopsl { position: absolute; width: 200px; z-index: 2; visibility: hidden; }
+.loopsc { position: absolute; width: 200px; z-index: 1; visibility: hidden; }
+.loops:hover .loopsc { z-index: 3; }
+
+.games
+{
+    position: absolute; width: 292px; top: 360px;
+    left: calc(50% - 390px); transform: translate(-50%,0%);
+}
+
+.gamesl { position: absolute; width: 292px; z-index: 2; visibility: hidden; }
+.gamesc { position: absolute; width: 292px; z-index: 1; visibility: hidden; }
+.games:hover .gamesc { z-index: 3; }
+
+.mystery
+{
+    position: absolute; width: 320px; top: 445px;
+    left: calc(50% - 170px); transform: translate(-50%,0%);
+}
+
+.mysteryl { position: absolute; width: 320px; }
+.mysteryc { position: absolute; width: 320px; opacity: 0; }
+.mystery:hover .mysteryc { opacity: 1; }
+
+.letterboxd
+{
+    position: absolute; width: 80px; top: 607px;
+    left: calc(50% + 253px); transform: translate(-50%,0%);
+}
+
+.cow
+{
+    position: absolute; width: 80px; top: 596px; z-index: 1;
+    left: calc(50% - 179px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.tree
+{
+    position: absolute; width: 28px; top: 349px; z-index: 1;
+    left: calc(50% - 338px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.tree2
+{
+    position: absolute; width: 50px; top: 270px; z-index: 1;
+    left: calc(50% + 125px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.bird
+{
+    position: absolute; width: 30px; top: 433px; z-index: 2;
+    left: calc(50% - 130px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.board
+{
+    position: absolute; width: 182px; top: 498px; z-index: 1;
+    left: calc(50% + 250px); transform: translate(-50%,0%);
+    pointer-events: none; display: initial;
+}
+
+.boar
+{
+    position: absolute; width: 182px; top: 498px; z-index: 1;
+    left: calc(50% + 250px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.tree3
+{
+    position: absolute; width: 38px; top: 544px; z-index: 1;
+    left: calc(50% + 458px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.tree4
+{
+    position: absolute; width: 42px; top: 455px; z-index: 1;
+    left: calc(50% + 412px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.tree5
+{
+    position: absolute; width: 22px; top: 560px; z-index: 1;
+    left: calc(50% - 15px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.right
+{
+    position: absolute; width: 32px; top: 518px; z-index: 1;
+    left: calc(50% + 362px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.top
+{
+    position: absolute; width: 78px; top: 450px; z-index: 2;
+    left: calc(50% + 270px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.left
+{
+    position: absolute; width: 55px; top: 553px; z-index: 1;
+    left: calc(50% + 138px); transform: translate(-50%,0%);
+    pointer-events: none;
+}
+
+.bo1
+{
+    position: absolute; width: 130px; top: 348px; z-index: 1;
+    left: calc(50% + 489px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.about:hover .bo1 { opacity: 1; }
+
+.bo2
+{
+    position: absolute; width: 110px; top: 326px; z-index: 1;
+    left: calc(50% + 248px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.snowcat:hover .bo2 { opacity: 1; }
+
+.bo3
+{
+    position: absolute; width: 140px; top: 347px; z-index: 1;
+    left: calc(50% - 2px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.loops:hover .bo3 { opacity: 1; }
+
+.bo4
+{
+    position: absolute; width: 130px; top: 174px; z-index: 1;
+    left: calc(50% + 637px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.games:hover .bo4 { opacity: 1; }
+
+.bo5
+{
+    position: absolute; width: 142px; top: 96px; z-index: 1;
+    left: calc(50% + 417px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.mystery:hover .bo5 { opacity: 1; }
+
+.bh1
+{
+    position: absolute; width: 182px; top: 313px; z-index: 1;
+    left: calc(50% + 490px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.about:hover .bh1 { opacity: 1; }
+
+.bh2
+{
+    position: absolute; width: 182px; top: 293px; z-index: 1;
+    left: calc(50% + 250px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.snowcat:hover .bh2 { opacity: 1; }
+
+.bh3
+{
+    position: absolute; width: 182px; top: 313px; z-index: 1;
+    left: calc(50%); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.loops:hover .bh3 { opacity: 1; }
+
+.bh4
+{
+    position: absolute; width: 182px; top: 138px; z-index: 1;
+    left: calc(50% + 640px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.games:hover .bh4 { opacity: 1; }
+
+.bh5
+{
+    position: absolute; width: 182px; top: 53px; z-index: 1;
+    left: calc(50% + 420px); transform: translate(-50%,0%);
+    pointer-events: none; opacity: 0;
+}
+
+.mystery:hover .bh5 { opacity: 1; }
+
+.l1
+{
+    position: absolute; width: 50px; top: 293px; z-index: 2;
+    left: calc(50% + 2px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.l2
+{
+    position: absolute; width: 80px; top: 485px; z-index: 2;
+    left: calc(50% - 76px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.l3
+{
+    position: absolute; width: 102px; top: 489px; z-index: 2;
+    left: calc(50% + 68px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.l4
+{
+    position: absolute; width: 78px; top: 735px; z-index: 2;
+    left: calc(50% + 12px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.l5
+{
+    position: absolute; width: 100px; top: 944px; z-index: 2;
+    left: calc(50% + 4px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.l6
+{
+    position: absolute; width: 72px; top: 1042px; z-index: 2;
+    left: calc(50% + 1px); transform: translate(-50%,0%);
+    pointer-events: none; display: none;
+}
+
+.hidden { opacity: 0; }
+
+@media screen and (max-width: 600px)
+{ 
+    .snowcat  { left: calc(50%); top: 136px; width: 300px; }
+    .snowcatl { width: 300px; } .snowcatc { width: 300px; }
+
+    .about  { left: calc(50% - 77px); top: 334px; width: 100px; }
+    .aboutl { width: 100px; } .aboutc { width: 100px; }
+
+    .loops  { left: calc(50% + 65px); top: 333px; width: 132px; }
+    .loopsl { width: 132px; } .loopsc { width: 132px; }
+
+    .games  { left: calc(50% - 3px); top: 512px; width: 232px; }
+    .gamesl { width: 232px; } .gamesc { width: 232px; }
+
+    .mystery  { left: calc(50%); top: 800px; width: 240px; }
+    .mysteryl { width: 240px; } .mysteryc { width: 240px; }
+
+    .board { left: calc(50% + 1px); top: 1020px; width: 130px; display: none; }
+    .boar  { left: calc(50% + 1px); top: 1020px; width: 130px; display: initial; }
+
+    .letterboxd { left: calc(50% + 3px); top: 1099px; width: 50px; }
+
+    .cow   { display: none; } .bird  { display: none; }
+    .tree  { display: none; } .tree2 { display: none; }
+    .tree3 { display: none; } .tree4 { display: none; }
+    .tree5 { display: none; } .right { display: none; }
+    .top   { display: none; } .left  { display: none; }
+    
+    .text { display: block; }
+
+    .aboutc   { display: none; } .snowcatc    { display: none; }
+    .loopsc   { display: none; } .gamesc      { display: none; }
+    .mysteryc { display: none; } .letterboxdc { display: none; }
+
+    .l1 { display: initial; } .l2 { display: initial; }
+    .l3 { display: initial; } .l4 { display: initial; }
+    .l5 { display: initial; } .l6 { display: initial; }
+
+    .bo1 { display: none; } .bo2 { display: none; }
+    .bo3 { display: none; } .bo4 { display: none; }
+    .bo5 { display: none; } .bh1 { display: none; }
+    .bh2 { display: none; } .bh3 { display: none; }
+    .bh4 { display: none; } .bh5 { display: none; }
+}
+
+p
+{
+    position: absolute; margin-top: 200px; text-align: center;
+    line-height: 1.7; width: 800px; margin-bottom: 50px;
+
+    left: calc(50%); transform: translate(-50%,0%);
+}
+
+.an { display: block; width: 100%; margin-bottom: 21px; }
+
+@media screen and (max-width: 800px) { p { width: 100%; }}
+@media screen and (max-width: 600px)
+{ 
+    body { background-size: 1300px; }
+    p    { margin-top: 138px; }
+    .an  { margin-bottom: 7px; }
+}
+
+.back
+{
+    display: inline-block; width: 120px;
+    margin-top: 58px; margin-bottom: 32px;
+}
+
+@media screen and (max-width: 600px)
+{ 
+    .back { width: 90px; margin-top: 45px; margin-bottom: 21px; }
+}
+
+.bio
+{
+    position: absolute; width: 400px; top: 210px;
+    left: calc(50% + 26px); transform: translate(-50%,0%);
+}
+
+.resume
+{
+    position: absolute; width: 100px; top: 313px;
+    left: calc(50% + 300px); transform: translate(-50%,0%);
+}
+
+.resumel { position: absolute; width: 100px; }
+.resumec { position: absolute; width: 100px; opacity: 0; }
+.resume:hover .resumec { opacity: 1; }
+
+.hom2
+{
+    position: absolute; width: 80px; top: 339px;
+    left: calc(50% - 272px); transform: translate(-50%,0%);
+}
+
+.h2 { position: absolute; width: 80px; }
+.hc { position: absolute; width: 80px; opacity: 0; }
+.hom2:hover .hc { opacity: 1; }
+
+@media screen and (max-width: 600px)
+{ 
+    .bio { left: calc(50% + 10px); top: 148px; width: 320px; }
+
+    .resume  { left: calc(50% + 51px); top: 507px; width: 72px; }
+    .resumel { width: 72px; } .resumec { width: 72px; }
+
+    .hom2 { left: calc(50% - 49px); top: 525px; width: 60px; }
+    .h2 { width: 60px; } .hc { width: 60px; }
+}
